@@ -12,7 +12,7 @@ router.get('/profesores', function(req, res, next) {
   db.all(query,function(err,rows){
     if(err){
       console.log(err);
-      return;
+      return; 
     }
     res.render('profesores', { 
       title: "lista",
