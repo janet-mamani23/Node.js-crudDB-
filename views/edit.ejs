@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Edit Item</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1> Edit Item </h1>
+    <form action="/update/<%= item.id %>" method="post">
+        <input type="text" name="nombre" value="<%= item.Nombre %>" required>
+        <input type="text" name="materia" value="<%= item.Materia %>" required>
+        <button type="submit"> update </button>
+    </form>
+  </body>
+</html>
+s

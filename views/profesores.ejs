@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>lista de profesores</h1>
+    <ul>
+      <% profesores.forEach(element => { %>
+        <li><%= element.Nombre%> </li> 
+        <li><%= element.Materia %></li>
+
+      <% }) %>
+    </ul>
+  </body>
+</html>
