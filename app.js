@@ -8,9 +8,10 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+var db = require(`./db`);
 
-var sqlite3 = require("sqlite3");
-var db = new sqlite3.Database("./profesores.db");
+//var sqlite3 = require("sqlite3");
+//var db = new sqlite3.Database("./profesores.db");
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
