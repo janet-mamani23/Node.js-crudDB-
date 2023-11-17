@@ -1,11 +1,12 @@
-const mysql = require ('mysql2');
+const mysql = require('mysql2');
 
 const db = mysql.createConnection({
     host: 'localhost',
+    //host: 'mysql',
     user: 'root',
-    password:'1234'
-
+    password: '1234',
 });
+    
 db.connect((err)=> {
     if (err){
         console.log("Error en la consola al servidor");
