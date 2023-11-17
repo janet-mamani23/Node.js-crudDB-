@@ -7,12 +7,13 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/profesores',controllers.listaprofesores);
-router.get('/agregar',controllers.agregarprofesores);
-router.post('/agregar',controllers.postagregarprofesores);
-router.get('/edit/:id', controllers.geteditarprofesores);
-router.post('/update/:id', controllers.postupdateprofesores);
-router.get('/delete/:id', controllers.getdeleteprofesores);
+router.get('/personas',controllers.listapersonas);
+router.get('/agregar',controllers.agregarpersona);
+router.post('/agregar',controllers.postAgregarpersona);
+router.get('/edit/:id', controllers.geteditarpersona);
+router.post('/update/:id', controllers.postupdatepersona);
+router.get('/delete/:id', controllers.getdeletepersona);
+router.get('/delete/:id', controllers.postdeletepersona);
 
 
 module.exports = router;

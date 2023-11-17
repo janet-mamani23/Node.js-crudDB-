@@ -5,11 +5,11 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>lista de profesores</h1>
+    <h1>lista de personas</h1>
     <ul>
-      <% profesores.forEach(element => { %>
-        <li><%= element.Nombre%> </li> 
-        <li><%= element.Materia %></li>
+      <% personas.forEach(element => { %>
+        <li><%= element.nombre%> </li> 
+        <li><%= element.email %></li>
 
       <% }) %>
     </ul>       
