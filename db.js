@@ -11,7 +11,7 @@ const db = mysql.createConnection({
 db.connect((err) => {
     if (err) {
         console.log("Error en la conexion al server", err);
-        return;
+        return;   
     }
 
     // Verificar si existe la base de datos
