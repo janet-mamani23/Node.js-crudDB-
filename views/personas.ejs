@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+<%- include('./head.ejs') %>
   <body>
-    <h1>lista de personas</h1>
+    <h1>Lista de Personas</h1>
     <ul>
-      <% personas.forEach(element => { %>
+      <%personas.forEach(element => { %>
         <li><%= element.nombre%></li> 
         <li><%= element.email %></li>
 

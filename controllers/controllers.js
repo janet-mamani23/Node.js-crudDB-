@@ -8,7 +8,8 @@ const listapersonas = (req, res, next) => {
         console.log(err);
         return; 
       }
-      res.render("personas",{profesores:rows, title: "LISTA DE PERSONAS"});  //va direccionado al views archivo profesores
+      res.render("personas",{personas:rows, title: "LISTA DE PERSONAS"});
+      console.log(rows);  //va direccionado al views archivo personas
     })
 }
 
